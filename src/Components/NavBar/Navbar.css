@@ -113,3 +113,51 @@
     height: 30px;
     margin-top:30px
 }
+
+
+
+
+/*AI GAVE ME*/
+
+.side-bar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: white; /* Make it slightly transparent */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it is above everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .side-bar {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .side-bar hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 0.5px solid #ccc;
+  }
+  
+  /* Add an overlay behind the sidebar */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 900; /* Behind sidebar but above main page */
+    display: none;
+  }
+  
+  .overlay.show {
+    display: block;
+  }
