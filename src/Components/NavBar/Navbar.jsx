@@ -4,6 +4,7 @@ import logo from '../Assets/logo_2.png'
 import menu from '../Assets/icon-menu.svg'
 import close from '../Assets/icon-menu-close.svg'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -29,7 +30,7 @@ const Navbar = () => {
     { noshowMenu ? noshowMenu && (
       <>
           <ul className='list-items '>
-            <li>Home</li>
+            <li><Link style={{textDecoration: 'none'}} to='/'></Link>Home</li>
             <li>New</li>
             <li>Popular</li>
             <li>Trending</li>
@@ -42,8 +43,10 @@ const Navbar = () => {
    <div className='side-bar-container'>
     <img src ={close} className='close' onClick={toggleMenu} ></img>
        <ul className='side-bar '>
+       <hr />
+       <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/'>HomePage</Link></li>
              <hr />
-            <li>Upload</li>
+            <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/update'>Upload</Link></li>
             <hr />
             <li>MyUploads</li>
             <hr />
