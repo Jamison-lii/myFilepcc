@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import logo from '../Assets/logo_2.png'
+import logo from '../Assets/logo_final1.png'
 import menu from '../Assets/icon-menu.svg'
 import close from '../Assets/icon-menu-close.svg'
 import { useState } from 'react'
@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="Navbar">
         <div className="logo">
             <img src= {logo} ></img>
-            <p> SongFile</p>
+            <p> myFilepcc</p>
         </div>
         
       
@@ -30,11 +30,11 @@ const Navbar = () => {
     { noshowMenu ? noshowMenu && (
       <>
           <ul className='list-items '>
-            <li><Link style={{textDecoration: 'none'}} to='/'></Link>Home</li>
-            <li>New</li>
-            <li>Popular</li>
-            <li>Trending</li>
-            <li>Categories</li>
+            <li><Link style={{textDecoration: 'none' , color: 'inherit'}} to='/'>Home</Link></li>
+            <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/upload'>Upload</Link></li>
+            <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/myUploads'> MyUploads </Link></li>
+            <li>Profile</li>
+            
             
           </ul>
           </>
@@ -46,9 +46,9 @@ const Navbar = () => {
        <hr />
        <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/'>HomePage</Link></li>
              <hr />
-            <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/update'>Upload</Link></li>
+            <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/upload'>Upload</Link></li>
             <hr />
-            <li>MyUploads</li>
+            <li><Link style={{textDecoration: 'none', color: 'inherit'}} to='/myUploads'> MyUploads </Link></li>
             <hr />
             <li>Profile</li>
             <hr />

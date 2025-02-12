@@ -5,8 +5,9 @@ import './App.css'
 import Navbar from './Components/NavBar/Navbar'
 import Search from './Components/Search/Search'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Update from './Pages/Update'
+import Upload from './Pages/Upload'
 import HomePage from './Pages/HomePage'
+import MyUploads from './Pages/MyUploads'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,8 @@ function App() {
     <Navbar/>
      <Routes>
       <Route path='/'  element={<HomePage/>}/> 
-      <Route path='/update'  element={<Update/>}/> 
+      <Route path='/upload'  element={<Upload/>}/> 
+      <Route path='/myUploads' element={<MyUploads/>}/> 
      </Routes>
      </BrowserRouter>
     </>

@@ -39,6 +39,8 @@
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 600;
+    background: white;
+    background: none;
 
 }
 
@@ -46,8 +48,9 @@
     margin-top: 18px;
 }
 .logo img{
-    height: 45px;
-    width: 45px;
+    height: 70px;
+    margin-top: -5px;
+    background-color: transparent;
     
 }
 
