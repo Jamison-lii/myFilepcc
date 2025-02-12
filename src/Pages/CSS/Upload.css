@@ -1,6 +1,7 @@
 .upload{
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -8,4 +9,22 @@
 .upload img{
     height: 80px;
     
+}
+
+.section-upload{
+    display: inline-block;
+    background: #282828; /* Primary button color */
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    width: fit-content;
+    font-family: Montserrat;
+    width:90%;
+    height: 45%
 }

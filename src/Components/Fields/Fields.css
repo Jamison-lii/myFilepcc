@@ -1,0 +1,60 @@
+.Fields{
+    margin-top: 40px;
+    height: 50px;
+    width:300px;
+    margin-left: 10px;
+}
+
+.Fields input{
+   
+}
+
+#file{
+    display:none;
+}
+
+.Fields label {
+    display: inline-block;
+    background: #282828; 
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    width: fit-content;
+    font-family: Montserrat;
+    width:90%;
+    height: 45%
+
+  }
+  
+  /* Hover effect */
+  .Fields label:hover {
+    background: #303030;
+  }
+  
+  /* Active effect */
+  .Fields label:active {
+    background: #303030;
+    transform: scale(0.97);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .Fields label {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .Fields label {
+      font-size: 13px;
+      padding: 7px 10px;
+    }
+  }
+  
